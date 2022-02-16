@@ -1,0 +1,117 @@
+/* the * selector is gonna apply to Everything On The Page damn */
+* {
+    /*margin:10px;
+    put this here and it will be overridden by the bottom two*/
+    margin-left:100px;
+    margin-right:100px;
+    margin:10px;
+    /* put this here and it'll override the top two*/
+}
+
+/* remember to link the style sheet into the HTML file */
+h1 {
+    color:midnightblue;
+}
+
+strong {
+    font-weight:bold;
+}
+/* I think this overrides the HTML file? It do */
+
+p {
+    /* these are all examples of what we can do */
+    color:midnightblue;
+    background:aliceblue;
+    font-weight:normal;
+    text-transform:none;
+    font-style:normal;
+    line-height:normal;
+    /* this will be by pixels*/
+    letter-spacing:normal;
+    text-decoration:none;
+    font-size:medium;
+}
+
+body {
+    background:aliceblue; /* p tag background will override this one huh */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* doing id tag stuff - have to add <__ id="___" in HTML */
+#quotes {
+    /* things that are written lower overwrite the ones higher */
+    /* thus 'cascading' style sheets */
+    /* these actually Do Not overwrite the HTML styles, such as <em> for emphasis/italics*/
+    text-transform: none;
+    font-style:normal;
+}
+
+/* selecting classes is different from ids */
+.links {
+    color:blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* oh ig I didn't need to make a seaparate class for the link...*/
+a {
+    font-size: large;
+}
+
+/* pseudo classes?? */
+a:visited {
+    color:lightcoral;
+}
+/* this is a pseudo class as well, as the prof calles it*/
+/* okay so having a colon in the selector is called a pseudo class*/
+a:hover {
+    color:lightseagreen;
+    text-decoration: none;
+    /* that gets rid of the underline in a link when you hover over it, wild*/
+}
+
+/* divs can be edited using just div, or can be separated into ids*/
+div {
+
+}
+
+#container {
+    background:lightseagreen;
+    /* oh now we're adding border styling to the Box*/
+    border-style:solid;
+    border-color:black;
+    border-width:5px;
+    width:300px;
+    text-align: center;
+}
+
+#shape {
+    height: 200px;
+    width:200px;
+    background:darkslateblue;
+    border-style: solid;
+    border-width: 20px;
+    border-color:midnightblue;
+}
+
+#shape2 {
+    height:200px;
+    width:200px;
+    background:midnightblue;
+    border-style: solid;
+    border-width: 20px;
+    border-color: darkslateblue;
+}
+
+#circle {
+    height:100px;
+    width:100px;
+    background: lightseagreen;
+    border-radius:100px;
+    border-style:solid;
+    border-width:10px;
+    /* if I don't specify the colour, it defaults black huh*/
+}
+
+img {
+    height: 300px;
+}
